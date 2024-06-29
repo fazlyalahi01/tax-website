@@ -26,7 +26,7 @@ const HeroSection: React.FC = () => {
                                 buttonVariants({ variant: "outline", size: "lg", className: "hover:bg-white hover:text-primary transition duration-500" })
                             )}
                         >
-                            See Intro
+                            Contact Us
                         </Link>
                     </div>
                 </div>
