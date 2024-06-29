@@ -24,16 +24,13 @@ const Navbar: React.FC = () => {
     return (
         <div className={`shadow-sm fixed top-0 right-0 w-full z-50 duration-500 ${isScrolled ? "bg-primary" : "bg-white"}`}>
             <nav className={`container-x md:flex justify-center items-center p-8 transition-all ease-in-out duration-300`}>
-                <div className="flex justify-between items-center">
-                    {
-                        isScrolled ?
-                            <Link href={"/"}>
-                                <Image src={"/images/logo.png"} height={100} width={220} alt="logo" />
-                            </Link> :
-                            <Link href={"/"}>
-                                <Image src={"/images/logo_dark.png"} height={100} width={220} alt="logo" />
-                            </Link>
-                    }
+                <div className="flex justify-between items-cente ">
+                    <div className="flex-shrink-0">
+                        <Link href={"/"}>
+                            <h1 className={`uppercase font-extrabold  ${isScrolled ? "text-white text-xl duration-500" : "text-black text-3xl duration-500"}`}>Zillur Tax & Insurance </h1>
+                        </Link>
+                    </div>
+
 
                     <span className="block md:hidden">
                         {isOpenNav ? (

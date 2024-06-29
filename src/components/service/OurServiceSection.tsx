@@ -39,7 +39,7 @@ const OurServiceSection: React.FC = () => {
                             <div className="p-6">
                                 <h3 className="text-lg font-bold text-title">{service.title}</h3>
                                 <p className="mt-4 text-description">{service.description}</p>
-                                <a href="#" className="mt-4 inline-block text-primary duration-500 hover:text-blue-600 font-semibold">Learn More →</a>
+                                <a href="#" className="mt-4 inline-block text-primary duration-500 hover:text-blue-600 font-semibold">Read More →</a>
                             </div>
                         </div>
                     ))}

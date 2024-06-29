@@ -13,21 +13,17 @@ export const siteConfig = {
             href: "/about-us",
         },
         {
-            label: "Services",
+            label: "Tax & Account",
+            href: "/services",
+        },
+        {
+            label: "Insurance",
             href: "/services",
         },
         {
             label: "Contact",
             href: "/contact",
         },
-        {
-            label: "Blog",
-            href: "/blog",
-        },
-        {
-            label: "Client portal",
-            href: "/client-portal",
-        }
     ],
 
 };
