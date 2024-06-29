@@ -1,0 +1,13 @@
+@keyframes growAndSqueeze {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
+  .grow-squeeze {
+    animation: growAndSqueeze 3s infinite;
+  }
+  

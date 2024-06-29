@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-hex: #2488F2;
+    --secondary-hex: #56B9D6;
+    --title-hex: #1D263A;
+    --description-hex: #474646;
+    --lite-bg-hex: #FAFBFC;
+  }
+}
+
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 8em;
+  padding-left: 1em;
+  padding-right: 1em;
+
+}
+
+.container-x {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@media (max-width: 479px) {
+  .container {
+    padding-top: 4em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .container-x {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+}
