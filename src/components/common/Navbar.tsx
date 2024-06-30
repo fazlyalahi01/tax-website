@@ -1,6 +1,5 @@
 'use client'
 import { siteConfig } from "@/config/site";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
@@ -27,7 +26,7 @@ const Navbar: React.FC = () => {
                 <div className="flex justify-between items-cente ">
                     <div className="flex-shrink-0">
                         <Link href={"/"}>
-                            <h1 className={`uppercase font-extrabold  ${isScrolled ? "text-white text-xl duration-500" : "text-black text-3xl duration-500"}`}>Zillur Tax & Insurance </h1>
+                            <h1 className={`uppercase font-extrabold  ${isScrolled ? "text-white md:text-xl duration-500" : "text-black md:text-3xl text-xl duration-500"}`}>Zillur Tax & Insurance </h1>
                         </Link>
                     </div>
 

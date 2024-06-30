@@ -1,11 +1,9 @@
 "use client"
-import React from 'react';
-import OutlineButton from '../ui/OutlinedButton';
-import { Dialog, DialogContent, DialogTrigger } from '../ui/dialog';
-import ContactForm from '../contact/ContactForm';
-import Link from 'next/link';
-import { buttonVariants } from '../ui/button';
 import { cn } from '@/lib/utils';
+import React from 'react';
+import ContactForm from '../contact/ContactForm';
+import { buttonVariants } from '../ui/button';
+import { Dialog, DialogContent, DialogTrigger } from '../ui/dialog';
 
 const StartWithUs: React.FC = () => {
     return (
