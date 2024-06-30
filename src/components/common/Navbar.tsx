@@ -24,16 +24,14 @@ const Navbar: React.FC = () => {
         <div className={`shadow-sm fixed top-0 right-0 w-full z-50 duration-500 ${isScrolled ? "bg-primary" : "bg-white"}`}>
             <nav className={`container-x md:flex justify-center items-center p-8 transition-all ease-in-out duration-300`}>
                 <div className="flex justify-between items-cente ">
-                    <div className="flex-shrink-0">
-                        <Link href={"/"}>
-                            <h1 className={`uppercase font-extrabold  ${isScrolled ? "text-white md:text-xl duration-500" : "text-black md:text-3xl text-xl duration-500"}`}>Zillur Tax & Insurance </h1>
-                        </Link>
-                    </div>
+                    <Link href={"/"} className="flex-shrink-0">
+                        <h1 className={`uppercase font-extrabold border-2 px-2 rounded  ${isScrolled ? "text-white md:text-xl duration-500  border-white" : "text-title md:text-2xl text-xl duration-500  border-title"}`}>Zillur Tax & Insurance </h1>
+                    </Link>
 
 
                     <span className="block md:hidden">
                         {isOpenNav ? (
-                            <RxCross2 onClick={() => setIsOpenNav(false)} color={isScrolled ? "#fff" : "#000"} />
+                            <RxCross2 onClick={() => setIsOpenNav(false)} color={isScrolled ? "#fff" : "#1D263A"} />
                         ) : (
                             <RxHamburgerMenu onClick={() => setIsOpenNav(true)} color={isScrolled ? "#fff" : "#000"} />
                         )}
@@ -42,7 +40,7 @@ const Navbar: React.FC = () => {
                 <ul className={`flex flex-col md:flex-row md:gap-6 gap-2 py-8 md:py-0 md:opacity-100 z-[200] ${isOpenNav ? "opacity-100 " : "opacity-0 "
                     } md:items-center md:justify-end md:static absolute left-0 px-7 md:px-0 transition-all ease-in-out duration-500  md:bg-opacity-0 w-full z-auto ${isScrolled ? "bg-primary md:bg-transparent" : "bg-white md:bg-transparent"}`}>
                     {siteConfig.navItems.map((item, index) => (
-                        <li key={index} className={`cursor-pointer ${isScrolled ? "text-white " : "text-black"} hover:text-secondary duration-500`}>
+                        <li key={index} className={`cursor-pointer ${isScrolled ? "text-white " : "text-title"} hover:text-secondary duration-500`}>
                             <Link href={item.href}>{item.label}</Link>
                         </li>
                     ))}
