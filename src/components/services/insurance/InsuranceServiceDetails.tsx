@@ -36,7 +36,7 @@ const InsuranceServiceDetails: React.FC = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
                     <p className="uppercase text-primary font-semibold pb-4">✵ Our Service</p>
-                    <h1 className="md:text-4xl text-3xl font-extrabold text-title pb-1">What we Provide?</h1>
+                    <h1 className="md:text-4xl text-3xl font-extrabold text-title pb-1">What We Provide?</h1>
                 </div>
                 <div className="grid gap-8 lg:grid-cols-2">
                     {services.map((service, index) => (
