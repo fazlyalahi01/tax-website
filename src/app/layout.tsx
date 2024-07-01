@@ -7,6 +7,7 @@ import "@/styles/globals.css";
 import "@/styles/animation.css";
 import Footer from "@/components/common/Footer";
 import { siteConfig } from "@/config/site";
+import StartWithUs from "@/components/common/StartWithUs";
 
 const fontFamily = Mulish({ subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default function RootLayout({
         <div className="md:mt-24 mt-24 min-h-screen">
           {children}
         </div>
+        <StartWithUs />
         <Footer />
       </body>
     </html>

@@ -3,28 +3,53 @@ import React from 'react';
 
 const services = [
     {
-        title: 'Individual Tax',
+        title: 'Individual Income Tax',
         description: 'Aenean harerta quam adipiscing senecthus penatibus aliquet eget sedne.',
         imageUrl: '/images/service1.png',
     },
     {
-        title: 'Business Tax',
+        title: 'Business Income Tax',
         description: 'Aenean harerta quam adipiscing senecthus penatibus aliquet eget sedne.',
         imageUrl: '/images/service2.png',
     },
     {
-        title: 'Accounting',
+        title: 'Tax Planning',
         description: 'Aenean harerta quam adipiscing senecthus penatibus aliquet eget sedne.',
         imageUrl: '/images/service3.png',
     },
     {
-        title: 'Incorporation',
+        title: 'New Business Setup',
+        description: 'Aenean harerta quam adipiscing senecthus penatibus aliquet eget sedne.',
+        imageUrl: '/images/service4.png',
+    },
+    {
+        title: 'Payroll Service',
+        description: 'Aenean harerta quam adipiscing senecthus penatibus aliquet eget sedne.',
+        imageUrl: '/images/service4.png',
+    },
+    {
+        title: 'Sales Tax Service',
+        description: 'Aenean harerta quam adipiscing senecthus penatibus aliquet eget sedne.',
+        imageUrl: '/images/service4.png',
+    },
+    {
+        title: 'IRS Representation',
+        description: 'Aenean harerta quam adipiscing senecthus penatibus aliquet eget sedne.',
+        imageUrl: '/images/service4.png',
+    },
+    {
+        title: 'Audits, Review and Compilation',
+        description: 'Aenean harerta quam adipiscing senecthus penatibus aliquet eget sedne.',
+        imageUrl: '/images/service4.png',
+    },
+    {
+        title: 'Notary Public',
         description: 'Aenean harerta quam adipiscing senecthus penatibus aliquet eget sedne.',
         imageUrl: '/images/service4.png',
     },
 ];
 
-const OurServiceSection: React.FC = () => {
+const TaxServiceDetailsSection: React.FC = () => {
     return (
         <section className="py-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -49,4 +74,4 @@ const OurServiceSection: React.FC = () => {
     );
 };
 
-export default OurServiceSection;
+export default TaxServiceDetailsSection;
