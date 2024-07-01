@@ -12,8 +12,8 @@ import StartWithUs from "@/components/common/StartWithUs";
 const fontFamily = Mulish({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: siteConfig.name,
-  description: siteConfig.description,
+  title: siteConfig.metadata.defaultName,
+  description: siteConfig.metadata.description,
 };
 
 export default function RootLayout({

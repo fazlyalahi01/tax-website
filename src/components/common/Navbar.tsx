@@ -1,12 +1,16 @@
 'use client'
 import { siteConfig } from "@/config/site";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar: React.FC = () => {
     const [isOpenNav, setIsOpenNav] = React.useState<boolean>(false);
     const [isScrolled, setIsScrolled] = React.useState<boolean>(false);
+
+    const pathname = usePathname();
+    console.log(pathname);     
 
     React.useEffect(() => {
         const handleScroll = () => {
@@ -40,7 +44,7 @@ const Navbar: React.FC = () => {
                 <ul className={`flex flex-col md:flex-row md:gap-6 gap-2 py-8 md:py-0 md:opacity-100 z-[200] ${isOpenNav ? "opacity-100 " : "opacity-0 "
                     } md:items-center md:justify-end md:static absolute left-0 px-7 md:px-0 transition-all ease-in-out duration-500  md:bg-opacity-0 w-full z-auto ${isScrolled ? "bg-primary md:bg-transparent" : "bg-white md:bg-transparent"}`}>
                     {siteConfig.navItems.map((item, index) => (
-                        <li key={index} className={`cursor-pointer ${isScrolled ? "text-white " : "text-title"} hover:text-secondary font-semibold duration-500`}>
+                        <li key={index} className={`cursor-pointer ${isScrolled ? "text-white " : "text-title"} hover:text-secondary font-semibold duration-500 ${pathname === item.href ? "text-secondary " : ""}`}>
                             <Link href={item.href}>{item.label}</Link>
                         </li>
                     ))}
