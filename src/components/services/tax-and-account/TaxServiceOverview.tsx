@@ -19,7 +19,7 @@ const TaxServiceOverview: React.FC = () => {
 
                     <div className="space-y-6 max-w-xl pt-4 pb-6">
                         <div className="text-blue-900">
-                            <p className="uppercase text-primary font-semibold pb-4">✵ Service Overview</p>
+                            <p className="uppercase text-primary font-semibold pb-4">✵ Services Overview</p>
                             <h1 className="md:text-4xl text-3xl font-extrabold text-title pb-1">Tax and Account Service</h1>
                             <p className="text-base md:pt-4 pt-2">
                                 Far far away, beqhind the woerd mountqeains, far from the countrites Vokatlia and Consonantia, there live the blind texts. Separateed they in the Boqokmarksgrove behind the word mouhntains the Semantics.

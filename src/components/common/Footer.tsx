@@ -9,9 +9,11 @@ const Footer: React.FC = () => {
             <div className="container-x py-8 mx-auto flex flex-wrap justify-between space-y-8 md:space-y-0">
 
                 <div className="w-full md:w-1/4">
-                    <h2 className="text-2xl font-bold text-white mb-4">Zillur Tax & <span className="text-primary">Insurance</span></h2>
+                    <h2 className="text-2xl font-bold text-white mb-4">Zillur Tax, Accounting <span className="text-primary">Inc.</span></h2>
                     <p className="mb-4">
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit porta, tempus eros mollis facilisis vestibulum.
+                        88-11A, 169th St.(2nd fl) Jamaica, NY 11432 <br />
+                        Phone: (646) 322-3254 <br /> 
+                        Email: <Link href="mailto:zillurincometaxnyc@gmail.com" className="text-white hover:text-white">zillurincometaxnyc@gmail.com</Link>                        
                     </p>
                     <div className="flex space-x-2">
                         <a href="#" className="text-white hover:text-white bg-gray-800 p-1 rounded"><FaFacebookF /></a>

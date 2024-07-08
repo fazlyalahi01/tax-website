@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import ServiceCard from './ServiceCard';
 
 const services = [
     {
@@ -50,13 +51,7 @@ const OurServiceSectionTax: React.FC = () => {
                 </div>
                 <div className="grid gap-8 lg:grid-cols-3">
                     {services.map((service, index) => (
-                        <div key={index} className="bg-white rounded-lg shadow overflow-hidden md:flex">
-                            <div className="p-6">
-                                <h3 className="text-lg font-bold text-title">{service.title}</h3>
-                                <p className="mt-4 text-description">{service.description}</p>
-                                <a href="#" className="mt-4 inline-block text-primary duration-500 hover:text-blue-600 font-semibold text-sm">Read More →</a>
-                            </div>
-                        </div>
+                        <ServiceCard key={index} title={service.title} description={service.description} />
                     ))}
                 </div>
             </div>

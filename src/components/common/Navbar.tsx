@@ -10,7 +10,6 @@ const Navbar: React.FC = () => {
     const [isScrolled, setIsScrolled] = React.useState<boolean>(false);
 
     const pathname = usePathname();
-    console.log(pathname);     
 
     React.useEffect(() => {
         const handleScroll = () => {
@@ -29,7 +28,7 @@ const Navbar: React.FC = () => {
             <nav className={`container-x md:flex justify-center items-center py-8 transition-all ease-in-out duration-300`}>
                 <div className="flex justify-between items-cente">
                     <Link href={"/"} className="flex-shrink-0">
-                        <h1 className={`uppercase font-extrabold border-2 px-2 rounded  ${isScrolled ? "text-white md:text-xl duration-500  border-white" : "text-title md:text-2xl text-xl duration-500  border-title"}`}>Zillur Tax & Insurance </h1>
+                        <h1 className={`uppercase font-extrabold border-2 px-2 rounded  ${isScrolled ? "text-white md:text-xl duration-500  border-white" : "text-title md:text-2xl text-xl duration-500  border-title"}`}>Zillur Tax, Accounting Inc.</h1>
                     </Link>
 
 

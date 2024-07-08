@@ -20,12 +20,16 @@ export const siteConfig = {
             href: "/about-us",
         },
         {
-            label: "Tax & Account",
+            label: "Accounting",
             href: "/tax-and-account",
         },
         {
             label: "Insurance",
             href: "/insurance",
+        },
+        {
+            label: "Real Estate Service",
+            href: "/real-estate",
         },
         {
             label: "Contact",

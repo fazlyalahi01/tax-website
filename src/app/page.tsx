@@ -1,3 +1,4 @@
+import AboutMeSection from '@/components/about/AboutMeSection';
 import AboutSection from '@/components/home/AboutSection';
 import HeroSection from '@/components/home/HeroSection';
 import OurServiceSectionInsurance from '@/components/home/OurServiceSectionInsurance';
@@ -9,7 +10,8 @@ const Home: React.FC = () => {
   return (
     <>
       <HeroSection />
-      <AboutSection />
+      {/* <AboutSection /> */}
+      <AboutMeSection fromLanding={true} />
       <OurServiceSectionTax />
       <OurServiceSectionInsurance />      
       {/* <OurClientSection />   */}
