@@ -18,11 +18,15 @@ const SliderItem: React.FC<SliderItemProps> = ({
     <>
       <div className="bg-black/50 absolute top-0 bottom-0 left-0 right-0"></div>
       <div className="container z-20 text-white ">
-        <p className="uppercase font-semibold pb-4">✵ {title}</p>
-        <h1 className="md:text-7xl text-4xl leading-tight font-extrabold border-l-4 pl-4 border-gray-300 py-2">
+        <p className="uppercase font-semibold pb-4 text-[14px] sm:text-base">
+          ✵ {title}
+        </p>
+        <h1 className="md:text-7xl text-3xl leading-tight font-extrabold border-l-4 pl-4 border-gray-300 py-2">
           {heading}
         </h1>
-        <p className="text-base pt-4 max-w-2xl h-[100px]">{description}</p>
+        <p className="text-base pt-4 max-w-2xl h-[130px] md:h-[100px]">
+          {description}
+        </p>
         <div className="pt-4">
           <Link
             href="/contact"
