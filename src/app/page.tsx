@@ -1,23 +1,22 @@
-import AboutMeSection from '@/components/about/AboutMeSection';
-import AboutSection from '@/components/home/AboutSection';
-import HeroSection from '@/components/home/HeroSection';
-import OurServiceSectionInsurance from '@/components/home/OurServiceSectionInsurance';
-import OurServiceSectionTax from '@/components/home/OurServiceSectionTax';
+import AboutMeSection from "@/components/about/AboutMeSection";
+import MainSlider from "@/components/common/slider/MainSlider";
+import OurServiceSectionInsurance from "@/components/home/OurServiceSectionInsurance";
+import OurServiceSectionTax from "@/components/home/OurServiceSectionTax";
 
-import React from 'react';
+import React from "react";
 
 const Home: React.FC = () => {
   return (
     <>
-      <HeroSection />
+      <MainSlider />
+      {/* <HeroSection /> */}
       {/* <AboutSection /> */}
       <AboutMeSection fromLanding={true} />
       <OurServiceSectionTax />
-      <OurServiceSectionInsurance />      
+      <OurServiceSectionInsurance />
       {/* <OurClientSection />   */}
       {/* <ExperienceSection /> */}
-
-    </ >
+    </>
   );
 };
 
