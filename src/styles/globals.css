@@ -4,14 +4,13 @@
 
 @layer base {
   :root {
-    --primary-hex: #2488F2;
-    --secondary-hex: #56B9D6;
-    --title-hex: #1D263A;
+    --primary-hex: #2488f2;
+    --secondary-hex: #56b9d6;
+    --title-hex: #1d263a;
     --description-hex: #474646;
-    --lite-bg-hex: #FAFBFC;
+    --lite-bg-hex: #fafbfc;
   }
 }
-
 
 .container {
   max-width: 1280px;
@@ -19,7 +18,6 @@
   padding-top: 8em;
   padding-left: 1em;
   padding-right: 1em;
-
 }
 
 .container-x {
@@ -39,5 +37,13 @@
     padding-left: 1em;
     padding-right: 1em;
   }
+}
 
+/* Slider */
+.swiperSlider {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
