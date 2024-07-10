@@ -21,7 +21,7 @@ const SliderItem: React.FC<SliderItemProps> = ({
         <p className="uppercase font-semibold pb-4 text-[14px] sm:text-base">
           ✵ {title}
         </p>
-        <h1 className="md:text-7xl text-3xl leading-tight font-extrabold border-l-4 pl-4 border-gray-300 py-2">
+        <h1 className="md:text-7xl sm:text-3xl text-2xl leading-tight font-extrabold border-l-4 pl-4 border-gray-300 py-2">
           {heading}
         </h1>
         <p className="text-base pt-4 max-w-2xl h-[130px] md:h-[100px]">
