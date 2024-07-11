@@ -4,6 +4,8 @@ import React from 'react';
 import ContactForm from '../contact/ContactForm';
 import { buttonVariants } from '../ui/button';
 import { Dialog, DialogContent, DialogTrigger } from '../ui/dialog';
+import { DialogTitle } from '@radix-ui/react-dialog';
+import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 
 const StartWithUs: React.FC = () => {
     return (
@@ -16,7 +18,7 @@ const StartWithUs: React.FC = () => {
                     <div className="flex-shrink-0">
                         <Dialog>
                             <DialogTrigger>
-                                <span                                    
+                                <span
                                     className={cn(
                                         buttonVariants({ variant: "outline", size: "lg", className: "hover:bg-primary hover:text-white transition duration-500 border-2 border-primary" })
                                     )}
@@ -25,6 +27,9 @@ const StartWithUs: React.FC = () => {
                                 </span>
                             </DialogTrigger>
                             <DialogContent className='bg-white px-4 pt-12 pb-8'>
+                                <VisuallyHidden asChild>
+                                    <DialogTitle className="text-2xl font-bold text-title pb-1">Get a free consultation</DialogTitle>
+                                </VisuallyHidden>
                                 <ContactForm />
                             </DialogContent>
                         </Dialog>
