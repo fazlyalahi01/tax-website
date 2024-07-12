@@ -6,6 +6,7 @@ import "@/styles/animation.css";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { Mulish } from "next/font/google";
+import { Toaster } from "sonner";
 
 const fontFamily = Mulish({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
         <div className="md:mt-24 mt-24 min-h-screen">{children}</div>
         <StartWithUs />
         <Footer />
+        <Toaster position="top-center" />
       </body>
     </html>
   );
