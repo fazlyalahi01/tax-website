@@ -24,6 +24,7 @@ const MainSlider: React.FC<TSliderProps> = ({ children }) => {
       autoplay={{
         delay: 3500,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
       }}
       pagination={{ clickable: true }}
       navigation={true}
