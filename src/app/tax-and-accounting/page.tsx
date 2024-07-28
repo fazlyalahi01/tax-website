@@ -2,15 +2,18 @@ import ServiceDetails from "@/components/services/ServiceDetails";
 import ServiceHeader from "@/components/services/ServiceHeader";
 import ServiceOverview from "@/components/services/ServiceOverview";
 import { siteConfig } from "@/config/site";
+import { services } from "@/data/services";
 import { Metadata } from "next";
-import { taxAndAccountServices } from "../data/taxAndAccountServices";
 
 export const metadata: Metadata = {
   title: siteConfig.metadata.taxAndAccount,
   description: siteConfig.metadata.description,
 };
 
-const TaxAndAccount = () => {
+const TaxAndAccounting = () => {
+  const taxAndAccountingServices = services.filter(
+    (service) => service.category === "tax and accounting"
+  );
   return (
     <>
       <ServiceHeader
@@ -26,8 +29,8 @@ const TaxAndAccount = () => {
                 mouhntains the Semantics."
         thumbImageUrl="/images/tax-account-overview.png"
       />
-      <ServiceDetails services={taxAndAccountServices} />
+      <ServiceDetails services={taxAndAccountingServices} />
     </>
   );
 };
-export default TaxAndAccount;
+export default TaxAndAccounting;

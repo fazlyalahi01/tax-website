@@ -2,9 +2,9 @@ import ServiceDetails from "@/components/services/ServiceDetails";
 import ServiceHeader from "@/components/services/ServiceHeader";
 import ServiceOverview from "@/components/services/ServiceOverview";
 import { siteConfig } from "@/config/site";
+import { services } from "@/data/services";
 import { Metadata } from "next";
 import React from "react";
-import { insuranceServices } from "../data/insuranceServices";
 
 export const metadata: Metadata = {
   title: siteConfig.metadata.insurance,
@@ -12,6 +12,9 @@ export const metadata: Metadata = {
 };
 
 const InsurancePage: React.FC = () => {
+  const insuranceServices = services.filter(
+    (service) => service.category === "insurance"
+  );
   return (
     <>
       <ServiceHeader
