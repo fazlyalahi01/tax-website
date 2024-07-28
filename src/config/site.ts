@@ -20,8 +20,8 @@ export const siteConfig = {
       href: "/about-us",
     },
     {
-      label: "Accounting",
-      href: "/tax-and-account",
+      label: "Tax  & Accounting",
+      href: "/tax-and-accounting",
     },
     {
       label: "Insurance",

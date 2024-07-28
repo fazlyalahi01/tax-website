@@ -1,7 +1,6 @@
 import AboutMeSection from "@/components/about/AboutMeSection";
 import MainSlider from "@/components/common/slider/MainSlider";
-import OurServiceSectionInsurance from "@/components/home/OurServiceSectionInsurance";
-import OurServiceSectionTax from "@/components/home/OurServiceSectionTax";
+import OurServicesSection from "@/components/home/OurServicesSection";
 
 import React from "react";
 
@@ -12,8 +11,9 @@ const Home: React.FC = () => {
       {/* <HeroSection /> */}
       {/* <AboutSection /> */}
       <AboutMeSection fromLanding={true} />
-      <OurServiceSectionTax />
-      <OurServiceSectionInsurance />
+      <OurServicesSection />
+      {/* <OurServiceSectionTax /> */}
+      {/* <OurServiceSectionInsurance /> */}
       {/* <OurClientSection />   */}
       {/* <ExperienceSection /> */}
     </>

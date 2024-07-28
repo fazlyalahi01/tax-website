@@ -1,10 +1,13 @@
 import ServiceDetails from "@/components/services/ServiceDetails";
 import ServiceHeader from "@/components/services/ServiceHeader";
 import ServiceOverview from "@/components/services/ServiceOverview";
+import { services } from "@/data/services";
 import React from "react";
-import { realEstateServices } from "../data/realEstateServices";
 
 const RealStatePage: React.FC = () => {
+  const realEstateServices = services.filter(
+    (service) => service.category === "real estate"
+  );
   return (
     <>
       <ServiceHeader

@@ -1,13 +1,10 @@
+import { IService } from "@/interface/service";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
-export type TService = {
-  title: string;
-  description: string;
-  imageUrl: string;
-};
 type TServiceDetailsProps = {
-  services: TService[];
+  services: IService[];
 };
 const ServiceDetails: React.FC<TServiceDetailsProps> = ({ services }) => {
   return (
@@ -22,29 +19,31 @@ const ServiceDetails: React.FC<TServiceDetailsProps> = ({ services }) => {
           </h1>
         </div>
         <div className="grid gap-8 lg:grid-cols-2">
-          {services.map((service, index) => (
+          {services.map((service) => (
             <div
-              key={index}
-              className="bg-white rounded-lg shadow overflow-hidden md:flex"
+              key={service.id}
+              className="bg-white rounded-lg shadow overflow-hidden md:flex md:gap-3"
             >
               <Image
                 className="h-56 w-full object-cover"
-                height={400}
-                width={600}
+                height={500}
+                width={700}
                 src={service.imageUrl}
                 alt={service.title}
               />
-              <div className="p-6">
+              <div className="p-2">
                 <h3 className="text-lg font-bold text-title">
                   {service.title}
                 </h3>
-                <p className="mt-4 text-description">{service.description}</p>
-                <a
-                  href="#"
+                <p className="mt-4 text-description">
+                  {service.description.slice(0, 200)}...
+                </p>
+                <Link
+                  href={`/service/${service.id}`}
                   className="mt-4 inline-block text-primary duration-500 hover:text-blue-600 font-semibold"
                 >
                   Read More →
-                </a>
+                </Link>
               </div>
             </div>
           ))}

@@ -24,7 +24,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={fontFamily.className}>
         <Navbar />
-        <div className="md:mt-24 mt-24 min-h-screen">{children}</div>
+        <div className="mt-24 md:mt-24 xl:mt-[100px] min-h-[calc(100vh-300px)]">
+          {children}
+        </div>
         <StartWithUs />
         <Footer />
         <Toaster position="top-center" />
