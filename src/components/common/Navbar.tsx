@@ -30,22 +30,22 @@ const Navbar: React.FC = () => {
       }`}
     >
       <nav
-        className={`container-x md:flex justify-center items-center py-8 transition-all ease-in-out duration-300`}
+        className={`container-x lg:flex justify-center items-center py-8 transition-all ease-in-out duration-300`}
       >
-        <div className="flex justify-between items-center gap-3">
+        <div className="flex justify-between items-center gap-3 px-3 lg:px-0">
           <Link href={"/"} className="flex-shrink-0">
             <h1
               className={`uppercase font-extrabold border-2 px-2 rounded  ${
                 isScrolled
-                  ? "text-white md:text-xl duration-500  border-white"
-                  : "text-title md:text-2xl text-base duration-500  border-title"
+                  ? "text-white md:text-xl sm:text-xl text-xs duration-500  border-white"
+                  : "text-title md:text-2xl sm:text-lg text-xs duration-500  border-title"
               }`}
             >
-              Zillur Tax, Accounting Inc.
+              Zillur Tax, Accounting & Insurance Inc.
             </h1>
           </Link>
 
-          <span className="block md:hidden">
+          <span className="block lg:hidden">
             {isOpenNav ? (
               <RxCross2
                 onClick={() => setIsOpenNav(false)}
@@ -60,12 +60,12 @@ const Navbar: React.FC = () => {
           </span>
         </div>
         <ul
-          className={`flex flex-col md:flex-row md:gap-6 gap-2 py-8 md:py-0 md:opacity-100 z-[200] ${
+          className={`flex flex-col lg:flex-row lg:gap-6 gap-2 py-8 lg:py-0 lg:opacity-100 z-[200] ${
             isOpenNav ? "opacity-100 " : "opacity-0 "
-          } md:items-center md:justify-end md:static absolute left-0 px-7 md:px-0 transition-all ease-in-out duration-500  md:bg-opacity-0 w-full z-auto ${
+          } lg:items-center lg:justify-end lg:static absolute left-0 px-7 lg:px-0 transition-all ease-in-out duration-500  lg:bg-opacity-0 w-full z-auto ${
             isScrolled
-              ? "bg-primary md:bg-transparent"
-              : "bg-white md:bg-transparent"
+              ? "bg-primary lg:bg-transparent"
+              : "bg-white lg:bg-transparent"
           }`}
         >
           {siteConfig.navItems.map((item, index) => (
