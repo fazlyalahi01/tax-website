@@ -9,7 +9,7 @@ import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog";
 
 const StartWithUs: React.FC = () => {
   return (
-    <div className="bg-gray-100 md:py-16 py-8">
+    <div className="bg-gray-100 md:py-16 py-8 px-3 xl:px-0">
       <div className="container-x">
         <div className="md:flex justify-between gap-12 items-center">
           <h1 className="md:text-4xl text-3xl font-extrabold text-title pb-1 flex-shrink-0">

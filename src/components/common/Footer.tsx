@@ -5,11 +5,12 @@ import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-12">
+    <footer className="bg-gray-900 text-gray-300 py-12 px-3 xl:px-0">
       <div className="container-x py-8 mx-auto flex flex-wrap justify-between space-y-8 md:space-y-0">
-        <div className="w-full md:w-1/4">
+        <div className="w-full md:w-5/12">
           <h2 className="text-2xl font-bold text-white mb-4">
-            Zillur Tax, Accounting <span className="text-primary">Inc.</span>
+            Zillur Tax, Accounting & Insurance{" "}
+            <span className="text-primary">Inc.</span>
           </h2>
           <p className="mb-4">
             88-11A, 169th St.(2nd fl) Jamaica, NY 11432 <br />
@@ -44,7 +45,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="w-full md:w-1/4">
+        <div className="w-full md:w-2/12">
           <h3 className="text-xl font-semibold text-white mb-4">Explore</h3>
           <ul className="space-y-2">
             {siteConfig.navItems.map((item, index) => (
@@ -57,7 +58,7 @@ const Footer: React.FC = () => {
           </ul>
         </div>
 
-        <div className="w-full md:w-1/4">
+        <div className="w-full md:w-2/12">
           <h3 className="text-xl font-semibold text-white mb-4">
             Our Services
           </h3>
@@ -80,7 +81,7 @@ const Footer: React.FC = () => {
           </ul>
         </div>
 
-        <div className="w-full md:w-1/4">
+        <div className="w-full md:w-3/12">
           <h3 className="text-xl font-semibold text-white mb-4">Lets Talk!</h3>
           <p className="mb-4">
             If your need any services or have any questions, feel free to
