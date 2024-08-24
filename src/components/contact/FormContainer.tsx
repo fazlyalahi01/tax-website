@@ -4,18 +4,6 @@ import React from "react";
 import ContactForm from "./ContactForm";
 
 const FormContainer: React.FC = () => {
-  const handleSubmit = (event: any) => {
-    event.preventDefault();
-    const formData = new FormData(event.target);
-    const data = {
-      firstName: formData.get("firstName"),
-      lastName: formData.get("lastName"),
-      email: formData.get("email"),
-      phone: formData.get("phone"),
-      message: formData.get("message"),
-    };
-    console.log(data);
-  };
   return (
     <div className="bg-lite pt-16 overflow-hidden">
       <div className="container-x">
